@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkbg"
+    tools:context="dp.smartdelivery.send"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/pickup"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.488" />
+
+    <Button
+        android:id="@+id/sel_loc_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:background="@color/btblue"
+        android:fontFamily="sans-serif"
+        android:freezesText="false"
+        android:text="Location"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+    <Button
+        android:id="@+id/sel_des_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/btblue"
+        android:fontFamily="sans-serif"
+        android:freezesText="false"
+        android:text="Destination"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/sel_loc_send"
+        app:layout_constraintTop_toBottomOf="@+id/sel_loc_send"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/submit_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/btblue"
+        android:fontFamily="sans-serif"
+        android:freezesText="false"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@+id/det_send"
+        app:layout_constraintTop_toBottomOf="@+id/det_send"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <Button
+        android:id="@+id/det_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/btblue"
+        android:fontFamily="sans-serif"
+        android:freezesText="false"
+        android:text="Details"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sel_des_send"
+        app:layout_constraintTop_toBottomOf="@+id/sel_des_send"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="309dp" />
+</android.support.constraint.ConstraintLayout>
